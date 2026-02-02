@@ -42,3 +42,5 @@ yhat = knn_model.predict(X_test)
 # Accuracy evaluation
 accuracy = accuracy_score(y_test, yhat)
 print(f"Accuracy: {accuracy:.2f}")
+
+
