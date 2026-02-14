@@ -46,6 +46,7 @@ print(f"Root Mean Squared Error: {rmse:.4f}")
 print(f"R2 Score: {r2:.4f}")
 
 plt.scatter(y_test, y_pred, alpha=0.5)
+plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], 'k--', lw=2)
 plt.xlabel('Actual Median House Value')
 plt.ylabel('Predicted Median House Value')
 plt.title('Actual vs Predicted Median House Value')
